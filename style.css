@@ -25,18 +25,30 @@ header h1 {
 }
 
 nav {
-  margin-top: 10px;
+  background-color: #003366;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  margin-right: 15px;
+  margin: 0 15px;
+  padding: 10px 15px;
   font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 6px;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #ffd700;
+  color: #003366;
 }
 
 .hero {
