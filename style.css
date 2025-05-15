@@ -96,6 +96,42 @@ h2 {
 }
 
 .project {
+	<style>
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.project {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project p {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+</style>
+
   flex: 1 1 300px;
   background: #fff;
   padding: 20px;
